@@ -7,6 +7,9 @@ class Posterizer
     settings.each do |key, value|
       html.gsub!("{#{key}}", value)
     end
+
+    html.gsub!("{PostViews}", (rand(100)+1).to_s)
+
     html
   end
 end

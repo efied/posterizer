@@ -10,5 +10,9 @@ describe Posterizer do
     it "replaces tags with their content from settings" do
       Posterizer.parse("<h1>{Title}</h1>").should == "<h1>Test</h1>"
     end
+
+    it "replaces {PostViews} tag with a random number" do
+      Posterizer.parse("{PostViews}").to_i.should > 0
+    end
   end
 end
