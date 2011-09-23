@@ -1,3 +1,5 @@
+[![Build Status](https://secure.travis-ci.org/jessmartin/posterizer.png)](http://travis-ci.org/jessmartin/posterizer)
+
 # Posterizer: Tools For Theming Posterous
 
 Posterous is a great tool for hosting your blog. However, it suffers
