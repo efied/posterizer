@@ -7,14 +7,15 @@ ProfileLink: "http://my-profile"
 CurrentPage: 1
 TotalPages: 3
 PortraitURL: "/images/profile_75.jpeg"
-PortraitURL-45: "/images/profile_75.jpeg"
+PortraitURL-35: "/images/profile_75.jpeg"
 PortraitURL-75: "/images/profile_75.jpeg"
-Posts:
+Post:
   - Title: "This is a post about nothing"
     Body: "A lot of content"
     PostID: 1
-    Permalink: 
-    ShortPermalink: 
+    Permalink: "http://my-site/link"
+    ShortPermalink: "http://my-site/link"
     Timestamp: 1244609779
-    TimeAgo: 13 days ago
+    TimeAgo: "13 days ago"
+    ResponseCount: 12
     
