@@ -1,5 +1,20 @@
 ---
 Title: Test
-Description: "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
+Description: Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
 OwnerName: Jess Martin
-Profile: "I like goldfish. The kind made of cheese."
+Profile: I like goldfish. The kind made of cheese.
+ProfileLink: "http://my-profile"
+CurrentPage: 1
+TotalPages: 3
+PortraitURL: "/images/profile_75.jpeg"
+PortraitURL-45: "/images/profile_75.jpeg"
+PortraitURL-75: "/images/profile_75.jpeg"
+Posts:
+  - Title: "This is a post about nothing"
+    Body: "A lot of content"
+    PostID: 1
+    Permalink: 
+    ShortPermalink: 
+    Timestamp: 1244609779
+    TimeAgo: 13 days ago
+    
