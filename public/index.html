@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>{Title}</title>
+    <link rel="shortcut icon" href="{Favicon}">
+    <link rel="alternate" type="application/rss+xml" href="{RSS}">
+    <style type="text/css">
+      body { font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+      #posts { width: 500px; margin-left: 0px; padding-left: 0px;}
+      div.sidebar { margin-top: 50px; float: right; width: 150px; }
+
+      div.postunit { position: relative; }
+      div.post { padding-top: 24px; }
+      div.editbox { visibility: hidden; height: 16px; position: absolute; top: 0px; }
+      div.postunit:hover div.editbox { visibility: visible; }
+
+      div.overall_content { width: 750px; }
+    </style>
+  </head>
+  <body>
+    <div class="overall_content">
+
+      <div class="header">
+        <h1>{Title}</h1>
+        <p>{Description}</p>
+      </div>
+
+      {block:ListSidebar}
+      <div class="sidebar">
+        <a href="{ProfileLink}">
+          <img src="{PortraitURL-45}" width='75' height='75'>
+        </a>
+        <p>{Profile}</p>
+        <a href="{ProfileLink}">{OwnerName}'s profile »</a>
+      </div>
+      {/block:ListSidebar}
+
+      {block:ShowSidebar}
+      <div class="sidebar">
+        Viewed {PostViews} times
+      </div>
+      {/block:ShowSidebar}
+
+      <div class="posts">
+        {block:Posts}
+
+        <div id="postunit_{PostID}" class="postunit">
+          {block:EditBox/}
+
+          <div class="post">
+            <b>{DayOfMonth} {ShortMonth}</b>						
+            <h3><a href="{Permalink}">{Title}</a></h3>
+            {Body}
+
+            {block:Comments/}
+          </div>
+        </div>
+
+        {block:Favorite 
+        hover_id='postunit_{PostID}' 
+        position_id='postunit_{PostID}'/} 
+
+        {/block:Posts}
+      </div>
+
+      {block:Pagination/}
+
+    </div>
+  </body>
+</html>
+

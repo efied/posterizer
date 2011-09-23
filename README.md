@@ -30,6 +30,8 @@ features:
 
 # Posterous Template Tags
 
+See the full list of Posterous Tags here: http://posterous.com/theming/reference
+
 ## Supported Tags
 
 * etc
@@ -54,3 +56,12 @@ Edit the file in post.html or page.html.
 * Sass/Scss support
 * Push to heroku in order to serve images
 * Easily switch between themes
+
+# Acknowledgments
+
+Stuff.
+
+## Similar Projects:
+
+* Thimblr - Tumblr theme development tool (https://github.com/jphastings/thimblr)
+* Fumblr - Tumblr theme development tool (https://github.com/pengwynn/fumblr)
