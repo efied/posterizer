@@ -20,7 +20,7 @@ features:
 
 ## Usage
 
-    ruby posterizer.rb
+    rackup
 
 * Make changes to index.html
 * Visit http://localhost:9292 in your browser to preview those changes
