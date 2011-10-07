@@ -31,6 +31,9 @@ describe Posterizer do
       Posterizer.parse("{block:Posts}{block:Comments/}{/block:Posts}").should include('<div class="posterousListComments">')
     end
 
+    it "inserts javascript into <head> of html" do
+      Posterizer.parse("<head><stuff></stuff></head>").match(/<head>(.*)<\/head>/)[1].should include('<script')
+    end
   end
 
   context "#parse_post_block" do
