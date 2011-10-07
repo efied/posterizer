@@ -9,6 +9,7 @@ and previewing changes to the theme must be done through their browser.
 Posterizer lets you develop and preview your Posterous blog in an 
 offline fashion with a rich set of tools.  It supports the following
 features:
+
 * Posterous template tags
   * See __List of Supported Posterous Tags__
 * Preview different pages within Posterous
