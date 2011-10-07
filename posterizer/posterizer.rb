@@ -22,6 +22,9 @@ class Posterizer
     return html unless html.match(block_matcher)
     post_block = html.match(block_matcher)[1]
 
+    html_dump = '<div class="editbox"><ul class="mini_commands posterous_edit_box posterous_edit_box_hidden"><li><a href="#">Edit</a></li><li><a href="#">Delete</a></li><li><a href="#">Tags</a></li><li><a href="#">Autopost</a></li></ul></div>'
+    post_block.gsub!("{block:EditBox/}", html_dump)
+
     settings["Post"][0].each do |key, value|
       post_block.gsub!("{#{key}}", value.to_s)
     end

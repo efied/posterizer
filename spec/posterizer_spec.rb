@@ -18,6 +18,10 @@ describe Posterizer do
     it "replaces {Pagination} tag with a pagination div" do
       Posterizer.parse("{block:Pagination/}").should include('<div class="pagination"')
     end
+
+    it "replaces {block:EditBox/} tag with the default editbox html" do
+      Posterizer.parse("{block:Posts}{block:EditBox/}{/block:Posts}").should include('<div class="editbox">')
+    end
   end
 
   context "#parse_post_block" do
