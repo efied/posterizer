@@ -27,6 +27,10 @@ describe Posterizer do
       Posterizer.parse("{block:Posts}{DayOfMonth} {ShortMonth}{/block:Posts}").should include('10 Jun')
     end
 
+    it "replaces {block:Comments/} with the comment html" do
+      Posterizer.parse("{block:Posts}{block:Comments/}{/block:Posts}").should include('<div class="posterousListComments">')
+    end
+
   end
 
   context "#parse_post_block" do

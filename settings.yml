@@ -18,4 +18,11 @@ Post:
     Timestamp: 1244609779
     TimeAgo: "13 days ago"
     ResponseCount: 12
-    
+    Comments:
+    - OwnerName: "Eddie Noodle"
+      Content: "Fanstic Post!"
+    - OwnerName: "Bob Foozle"
+      Content: "Great Post! On a totally irrelevant note, if your love life is lacking luster, visit http://www.romantic-love-pills.com"
+    - OwnerName: "Amanda Doofle"
+      Content: "I hate spammers!"
+
