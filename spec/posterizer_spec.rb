@@ -22,6 +22,11 @@ describe Posterizer do
     it "replaces {block:EditBox/} tag with the default editbox html" do
       Posterizer.parse("{block:Posts}{block:EditBox/}{/block:Posts}").should include('<div class="editbox">')
     end
+
+    it "replaces {DayOfMonth} and {ShortMonth} tags with appropriate values from post" do
+      Posterizer.parse("{block:Posts}{DayOfMonth} {ShortMonth}{/block:Posts}").should include('10 Jun')
+    end
+
   end
 
   context "#parse_post_block" do

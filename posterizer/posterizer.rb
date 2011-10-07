@@ -8,7 +8,6 @@ class Posterizer
     html = parse_post_block(html, settings)
 
     settings.each do |key, value|
-      #next if key == "Posts"
       html.gsub!("{#{key}}", value.to_s)
     end
 
@@ -26,6 +25,11 @@ class Posterizer
     post_block.gsub!("{block:EditBox/}", html_dump)
 
     settings["Post"][0].each do |key, value|
+      if key == "Timestamp"
+        post_date = Time.at(value.to_i)
+        post_block.gsub!("{DayOfMonth}", post_date.day.to_s)
+        post_block.gsub!("{ShortMonth}", post_date.strftime("%b"))
+      end
       post_block.gsub!("{#{key}}", value.to_s)
     end
 
